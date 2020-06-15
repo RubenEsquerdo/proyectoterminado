@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Darse de alta comprador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+ 
+
+ 
+ 
+    <ion-list>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="seller.nombre" name="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Edad</ion-label>
+        <ion-textarea [(ngModel)]="seller.edad" name="descripcion"></ion-textarea>
+      </ion-item>
+    
+    </ion-list>
+    <ion-button (click)="sendForm()" expand="block">Ser vendedor</ion-button>
+    <ion-button (click)="goBack()" expand="block">Volver</ion-button>
+    
+    
+ 
+</ion-content>
